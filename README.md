@@ -1,9 +1,6 @@
-# Supplemental Code
+# Code for "Show Me the Infographic I Imagine: Intent-Aware Infographic Retrieval for Authoring Support"
 
-Paper: "Show Me the Infographic I Imagine: Intent-Aware Infographic Retrieval for Authoring Support"
-
-This package contains a cleaned supplemental-code snapshot of the interactive interface used in the paper
-"Show Me the Infographic I Imagine: Intent-Aware Infographic Retrieval for Authoring Support."
+This repository contains a cleaned code release of the interactive interface used in the paper.
 
 ## Included
 
