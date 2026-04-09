@@ -1,0 +1,1100 @@
+{
+  "roots": [
+    {
+      "name": "Bar Chart",
+      "path": "Bar Chart",
+      "level": 1,
+      "chart_types": [],
+      "count": 58344,
+      "percentage": 58.34,
+      "children": [
+        {
+          "name": "Vertical Bar Chart",
+          "path": "Bar Chart > Vertical Bar Chart",
+          "level": 2,
+          "chart_types": [
+            "Vertical Bar Chart",
+            "Vertical Bar Chart With Circle",
+            "Vertical Group Bar Chart",
+            "Vertical Grouped Bar Chart",
+            "Vertical Stacked Bar Chart",
+            "Vertical Dot Bar Chart",
+            "Vertical Waffle Chart",
+            "Multiple Vertical Bar Chart"
+          ],
+          "count": 22816,
+          "percentage": 22.82,
+          "children": []
+        },
+        {
+          "name": "Horizontal Bar Chart",
+          "path": "Bar Chart > Horizontal Bar Chart",
+          "level": 2,
+          "chart_types": [
+            "Horizontal Bar Chart",
+            "Horizontal Bar Chart With Circle",
+            "Horizontal Diverging Bar Chart",
+            "Horizontal Group Bar Chart",
+            "Horizontal Stacked Bar Chart",
+            "Horizontal Dot Bar Chart",
+            "Horizontal Waffle Chart"
+          ],
+          "count": 25069,
+          "percentage": 25.07,
+          "children": []
+        },
+        {
+          "name": "Circular Bar Chart",
+          "path": "Bar Chart > Circular Bar Chart",
+          "level": 2,
+          "chart_types": [
+            "Circular Bar Chart",
+            "Stacked Circular Bar Chart",
+            "Grouped Circular Bar Chart"
+          ],
+          "count": 2654,
+          "percentage": 2.65,
+          "children": []
+        },
+        {
+          "name": "Radial Bar Chart",
+          "path": "Bar Chart > Radial Bar Chart",
+          "level": 2,
+          "chart_types": [
+            "Radial Bar Chart",
+            "Group Radial Bar Chart",
+            "Stacked Radial Bar Chart"
+          ],
+          "count": 4342,
+          "percentage": 4.34,
+          "children": []
+        },
+        {
+          "name": "Triangle Bar Chart",
+          "path": "Bar Chart > Triangle Bar Chart",
+          "level": 2,
+          "chart_types": [
+            "Triangle Bar Chart"
+          ],
+          "count": 1232,
+          "percentage": 1.23,
+          "children": []
+        },
+        {
+          "name": "Lollipop Chart",
+          "path": "Bar Chart > Lollipop Chart",
+          "level": 2,
+          "chart_types": [
+            "Lollipop Chart"
+          ],
+          "count": 1445,
+          "percentage": 1.44,
+          "children": []
+        },
+        {
+          "name": "Dot Chart",
+          "path": "Bar Chart > Dot Chart",
+          "level": 2,
+          "chart_types": [
+            "Group Dot Bar Chart",
+            "Grouped Dot Chart"
+          ],
+          "count": 786,
+          "percentage": 0.79,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Line Chart",
+      "path": "Line Chart",
+      "level": 1,
+      "chart_types": [],
+      "count": 9357,
+      "percentage": 9.36,
+      "children": [
+        {
+          "name": "Line Graph",
+          "path": "Line Chart > Line Graph",
+          "level": 2,
+          "chart_types": [
+            "Multiple Line Graph",
+            "Small Multiple Line Graph"
+          ],
+          "count": 2959,
+          "percentage": 2.96,
+          "children": []
+        },
+        {
+          "name": "Step Line Graph",
+          "path": "Line Chart > Step Line Graph",
+          "level": 2,
+          "chart_types": [
+            "Step Line Graph",
+            "Multiple Step Line Graph",
+            "Small Multiple Step Line Graph"
+          ],
+          "count": 1599,
+          "percentage": 1.6,
+          "children": []
+        },
+        {
+          "name": "Spline Graph",
+          "path": "Line Chart > Spline Graph",
+          "level": 2,
+          "chart_types": [
+            "Spline Graph",
+            "Multiple Spline Graph"
+          ],
+          "count": 886,
+          "percentage": 0.89,
+          "children": []
+        },
+        {
+          "name": "Sorted Lines Chart",
+          "path": "Line Chart > Sorted Lines Chart",
+          "level": 2,
+          "chart_types": [
+            "Sorted Lines Chart"
+          ],
+          "count": 1624,
+          "percentage": 1.62,
+          "children": []
+        },
+        {
+          "name": "Bump Chart",
+          "path": "Line Chart > Bump Chart",
+          "level": 2,
+          "chart_types": [
+            "Bump Chart"
+          ],
+          "count": 1608,
+          "percentage": 1.61,
+          "children": []
+        },
+        {
+          "name": "Slope Chart",
+          "path": "Line Chart > Slope Chart",
+          "level": 2,
+          "chart_types": [
+            "Slope Chart"
+          ],
+          "count": 681,
+          "percentage": 0.68,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Area Chart",
+      "path": "Area Chart",
+      "level": 1,
+      "chart_types": [],
+      "count": 9178,
+      "percentage": 9.18,
+      "children": [
+        {
+          "name": "Basic Area Chart",
+          "path": "Area Chart > Basic Area Chart",
+          "level": 2,
+          "chart_types": [
+            "Area Chart",
+            "Spline Area Chart",
+            "Stacked Area Chart",
+            "Multiple Area Chart",
+            "Small Multiple Area Chart",
+            "Layered Area Chart",
+            "Range Area Chart"
+          ],
+          "count": 7829,
+          "percentage": 7.83,
+          "children": []
+        },
+        {
+          "name": "Proportional Area Chart",
+          "path": "Area Chart > Proportional Area Chart",
+          "level": 2,
+          "chart_types": [
+            "Proportional Area Chart (Circle)",
+            "Proportional Area Chart (Triangle)",
+            "Proportional Area Chart (Square)"
+          ],
+          "count": 1349,
+          "percentage": 1.35,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Radar Chart",
+      "path": "Radar Chart",
+      "level": 1,
+      "chart_types": [],
+      "count": 7076,
+      "percentage": 7.08,
+      "children": [
+        {
+          "name": "Radar Line Chart",
+          "path": "Radar Chart > Radar Line Chart",
+          "level": 2,
+          "chart_types": [
+            "Radar Line Chart",
+            "Multiple Radar Line Chart"
+          ],
+          "count": 2735,
+          "percentage": 2.73,
+          "children": []
+        },
+        {
+          "name": "Radar Spline Chart",
+          "path": "Radar Chart > Radar Spline Chart",
+          "level": 2,
+          "chart_types": [
+            "Radar Spline Chart",
+            "Multiple Radar Spline Chart"
+          ],
+          "count": 3597,
+          "percentage": 3.6,
+          "children": []
+        },
+        {
+          "name": "Multiple Radar Chart",
+          "path": "Radar Chart > Multiple Radar Chart",
+          "level": 2,
+          "chart_types": [
+            "Multiple Radar Chart"
+          ],
+          "count": 744,
+          "percentage": 0.74,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Pie Chart",
+      "path": "Pie Chart",
+      "level": 1,
+      "chart_types": [],
+      "count": 2978,
+      "percentage": 2.98,
+      "children": [
+        {
+          "name": "Basic Pie Chart",
+          "path": "Pie Chart > Basic Pie Chart",
+          "level": 2,
+          "chart_types": [
+            "Pie Chart",
+            "Semicircle Pie Chart",
+            "Multiple Pie Chart"
+          ],
+          "count": 1184,
+          "percentage": 1.18,
+          "children": []
+        },
+        {
+          "name": "Donut Chart",
+          "path": "Pie Chart > Donut Chart",
+          "level": 2,
+          "chart_types": [
+            "Donut Chart",
+            "Semicircle Donut Chart",
+            "Multiple Donut Chart",
+            "Multiple Semi Donut Chart"
+          ],
+          "count": 1794,
+          "percentage": 1.79,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Scatterplot",
+      "path": "Scatterplot",
+      "level": 1,
+      "chart_types": [],
+      "count": 4002,
+      "percentage": 4.0,
+      "children": [
+        {
+          "name": "Basic Scatterplot",
+          "path": "Scatterplot > Basic Scatterplot",
+          "level": 2,
+          "chart_types": [
+            "Scatterplot",
+            "Grouped Scatterplot"
+          ],
+          "count": 4001,
+          "percentage": 4.0,
+          "children": []
+        },
+        {
+          "name": "Bubble Chart",
+          "path": "Scatterplot > Bubble Chart",
+          "level": 2,
+          "chart_types": [
+            "Bubble Chart"
+          ],
+          "count": 1,
+          "percentage": 0.0,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Gauge Chart",
+      "path": "Gauge Chart",
+      "level": 1,
+      "chart_types": [],
+      "count": 1209,
+      "percentage": 1.21,
+      "children": [
+        {
+          "name": "Multiple Gauge Chart",
+          "path": "Gauge Chart > Multiple Gauge Chart",
+          "level": 2,
+          "chart_types": [
+            "Multiple Gauge Chart"
+          ],
+          "count": 1209,
+          "percentage": 1.21,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Treemap",
+      "path": "Treemap",
+      "level": 1,
+      "chart_types": [],
+      "count": 728,
+      "percentage": 0.73,
+      "children": [
+        {
+          "name": "Basic Treemap",
+          "path": "Treemap > Basic Treemap",
+          "level": 2,
+          "chart_types": [
+            "Treemap"
+          ],
+          "count": 298,
+          "percentage": 0.3,
+          "children": []
+        },
+        {
+          "name": "Voronoi Treemap",
+          "path": "Treemap > Voronoi Treemap",
+          "level": 2,
+          "chart_types": [
+            "Voronoi Treemap(Circle)",
+            "Voronoi Treemap(Rectangle)"
+          ],
+          "count": 430,
+          "percentage": 0.43,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Diagram",
+      "path": "Diagram",
+      "level": 1,
+      "chart_types": [],
+      "count": 1806,
+      "percentage": 1.81,
+      "children": [
+        {
+          "name": "Alluvial Diagram",
+          "path": "Diagram > Alluvial Diagram",
+          "level": 2,
+          "chart_types": [
+            "Alluvial Diagram"
+          ],
+          "count": 1422,
+          "percentage": 1.42,
+          "children": []
+        },
+        {
+          "name": "Pyramid Diagram",
+          "path": "Diagram > Pyramid Diagram",
+          "level": 2,
+          "chart_types": [
+            "Pyramid Diagram"
+          ],
+          "count": 384,
+          "percentage": 0.38,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Histogram",
+      "path": "Histogram",
+      "level": 1,
+      "chart_types": [
+        "Histogram"
+      ],
+      "count": 4415,
+      "percentage": 4.42,
+      "children": []
+    },
+    {
+      "name": "Range Chart",
+      "path": "Range Chart",
+      "level": 1,
+      "chart_types": [
+        "Range Chart"
+      ],
+      "count": 562,
+      "percentage": 0.56,
+      "children": []
+    },
+    {
+      "name": "Funnel Chart",
+      "path": "Funnel Chart",
+      "level": 1,
+      "chart_types": [
+        "Funnel Chart"
+      ],
+      "count": 172,
+      "percentage": 0.17,
+      "children": []
+    },
+    {
+      "name": "Pyramid Chart",
+      "path": "Pyramid Chart",
+      "level": 1,
+      "chart_types": [
+        "Pyramid Chart"
+      ],
+      "count": 173,
+      "percentage": 0.17,
+      "children": []
+    }
+  ],
+  "flat_mapping": {
+    "Vertical Bar Chart": {
+      "path": [
+        "Bar Chart",
+        "Vertical Bar Chart"
+      ],
+      "ancestors": [
+        "Bar Chart"
+      ]
+    },
+    "Vertical Bar Chart With Circle": {
+      "path": [
+        "Bar Chart",
+        "Vertical Bar Chart"
+      ],
+      "ancestors": [
+        "Bar Chart"
+      ]
+    },
+    "Vertical Group Bar Chart": {
+      "path": [
+        "Bar Chart",
+        "Vertical Bar Chart"
+      ],
+      "ancestors": [
+        "Bar Chart"
+      ]
+    },
+    "Vertical Grouped Bar Chart": {
+      "path": [
+        "Bar Chart",
+        "Vertical Bar Chart"
+      ],
+      "ancestors": [
+        "Bar Chart"
+      ]
+    },
+    "Vertical Stacked Bar Chart": {
+      "path": [
+        "Bar Chart",
+        "Vertical Bar Chart"
+      ],
+      "ancestors": [
+        "Bar Chart"
+      ]
+    },
+    "Vertical Dot Bar Chart": {
+      "path": [
+        "Bar Chart",
+        "Vertical Bar Chart"
+      ],
+      "ancestors": [
+        "Bar Chart"
+      ]
+    },
+    "Vertical Waffle Chart": {
+      "path": [
+        "Bar Chart",
+        "Vertical Bar Chart"
+      ],
+      "ancestors": [
+        "Bar Chart"
+      ]
+    },
+    "Multiple Vertical Bar Chart": {
+      "path": [
+        "Bar Chart",
+        "Vertical Bar Chart"
+      ],
+      "ancestors": [
+        "Bar Chart"
+      ]
+    },
+    "Horizontal Bar Chart": {
+      "path": [
+        "Bar Chart",
+        "Horizontal Bar Chart"
+      ],
+      "ancestors": [
+        "Bar Chart"
+      ]
+    },
+    "Horizontal Bar Chart With Circle": {
+      "path": [
+        "Bar Chart",
+        "Horizontal Bar Chart"
+      ],
+      "ancestors": [
+        "Bar Chart"
+      ]
+    },
+    "Horizontal Diverging Bar Chart": {
+      "path": [
+        "Bar Chart",
+        "Horizontal Bar Chart"
+      ],
+      "ancestors": [
+        "Bar Chart"
+      ]
+    },
+    "Horizontal Group Bar Chart": {
+      "path": [
+        "Bar Chart",
+        "Horizontal Bar Chart"
+      ],
+      "ancestors": [
+        "Bar Chart"
+      ]
+    },
+    "Horizontal Stacked Bar Chart": {
+      "path": [
+        "Bar Chart",
+        "Horizontal Bar Chart"
+      ],
+      "ancestors": [
+        "Bar Chart"
+      ]
+    },
+    "Horizontal Dot Bar Chart": {
+      "path": [
+        "Bar Chart",
+        "Horizontal Bar Chart"
+      ],
+      "ancestors": [
+        "Bar Chart"
+      ]
+    },
+    "Horizontal Waffle Chart": {
+      "path": [
+        "Bar Chart",
+        "Horizontal Bar Chart"
+      ],
+      "ancestors": [
+        "Bar Chart"
+      ]
+    },
+    "Circular Bar Chart": {
+      "path": [
+        "Bar Chart",
+        "Circular Bar Chart"
+      ],
+      "ancestors": [
+        "Bar Chart"
+      ]
+    },
+    "Stacked Circular Bar Chart": {
+      "path": [
+        "Bar Chart",
+        "Circular Bar Chart"
+      ],
+      "ancestors": [
+        "Bar Chart"
+      ]
+    },
+    "Grouped Circular Bar Chart": {
+      "path": [
+        "Bar Chart",
+        "Circular Bar Chart"
+      ],
+      "ancestors": [
+        "Bar Chart"
+      ]
+    },
+    "Radial Bar Chart": {
+      "path": [
+        "Bar Chart",
+        "Radial Bar Chart"
+      ],
+      "ancestors": [
+        "Bar Chart"
+      ]
+    },
+    "Group Radial Bar Chart": {
+      "path": [
+        "Bar Chart",
+        "Radial Bar Chart"
+      ],
+      "ancestors": [
+        "Bar Chart"
+      ]
+    },
+    "Stacked Radial Bar Chart": {
+      "path": [
+        "Bar Chart",
+        "Radial Bar Chart"
+      ],
+      "ancestors": [
+        "Bar Chart"
+      ]
+    },
+    "Triangle Bar Chart": {
+      "path": [
+        "Bar Chart",
+        "Triangle Bar Chart"
+      ],
+      "ancestors": [
+        "Bar Chart"
+      ]
+    },
+    "Lollipop Chart": {
+      "path": [
+        "Bar Chart",
+        "Lollipop Chart"
+      ],
+      "ancestors": [
+        "Bar Chart"
+      ]
+    },
+    "Group Dot Bar Chart": {
+      "path": [
+        "Bar Chart",
+        "Dot Chart"
+      ],
+      "ancestors": [
+        "Bar Chart"
+      ]
+    },
+    "Grouped Dot Chart": {
+      "path": [
+        "Bar Chart",
+        "Dot Chart"
+      ],
+      "ancestors": [
+        "Bar Chart"
+      ]
+    },
+    "Multiple Line Graph": {
+      "path": [
+        "Line Chart",
+        "Line Graph"
+      ],
+      "ancestors": [
+        "Line Chart"
+      ]
+    },
+    "Small Multiple Line Graph": {
+      "path": [
+        "Line Chart",
+        "Line Graph"
+      ],
+      "ancestors": [
+        "Line Chart"
+      ]
+    },
+    "Step Line Graph": {
+      "path": [
+        "Line Chart",
+        "Step Line Graph"
+      ],
+      "ancestors": [
+        "Line Chart"
+      ]
+    },
+    "Multiple Step Line Graph": {
+      "path": [
+        "Line Chart",
+        "Step Line Graph"
+      ],
+      "ancestors": [
+        "Line Chart"
+      ]
+    },
+    "Small Multiple Step Line Graph": {
+      "path": [
+        "Line Chart",
+        "Step Line Graph"
+      ],
+      "ancestors": [
+        "Line Chart"
+      ]
+    },
+    "Spline Graph": {
+      "path": [
+        "Line Chart",
+        "Spline Graph"
+      ],
+      "ancestors": [
+        "Line Chart"
+      ]
+    },
+    "Multiple Spline Graph": {
+      "path": [
+        "Line Chart",
+        "Spline Graph"
+      ],
+      "ancestors": [
+        "Line Chart"
+      ]
+    },
+    "Sorted Lines Chart": {
+      "path": [
+        "Line Chart",
+        "Sorted Lines Chart"
+      ],
+      "ancestors": [
+        "Line Chart"
+      ]
+    },
+    "Bump Chart": {
+      "path": [
+        "Line Chart",
+        "Bump Chart"
+      ],
+      "ancestors": [
+        "Line Chart"
+      ]
+    },
+    "Slope Chart": {
+      "path": [
+        "Line Chart",
+        "Slope Chart"
+      ],
+      "ancestors": [
+        "Line Chart"
+      ]
+    },
+    "Area Chart": {
+      "path": [
+        "Area Chart",
+        "Basic Area Chart"
+      ],
+      "ancestors": [
+        "Area Chart"
+      ]
+    },
+    "Spline Area Chart": {
+      "path": [
+        "Area Chart",
+        "Basic Area Chart"
+      ],
+      "ancestors": [
+        "Area Chart"
+      ]
+    },
+    "Stacked Area Chart": {
+      "path": [
+        "Area Chart",
+        "Basic Area Chart"
+      ],
+      "ancestors": [
+        "Area Chart"
+      ]
+    },
+    "Multiple Area Chart": {
+      "path": [
+        "Area Chart",
+        "Basic Area Chart"
+      ],
+      "ancestors": [
+        "Area Chart"
+      ]
+    },
+    "Small Multiple Area Chart": {
+      "path": [
+        "Area Chart",
+        "Basic Area Chart"
+      ],
+      "ancestors": [
+        "Area Chart"
+      ]
+    },
+    "Layered Area Chart": {
+      "path": [
+        "Area Chart",
+        "Basic Area Chart"
+      ],
+      "ancestors": [
+        "Area Chart"
+      ]
+    },
+    "Range Area Chart": {
+      "path": [
+        "Area Chart",
+        "Basic Area Chart"
+      ],
+      "ancestors": [
+        "Area Chart"
+      ]
+    },
+    "Proportional Area Chart (Circle)": {
+      "path": [
+        "Area Chart",
+        "Proportional Area Chart"
+      ],
+      "ancestors": [
+        "Area Chart"
+      ]
+    },
+    "Proportional Area Chart (Triangle)": {
+      "path": [
+        "Area Chart",
+        "Proportional Area Chart"
+      ],
+      "ancestors": [
+        "Area Chart"
+      ]
+    },
+    "Proportional Area Chart (Square)": {
+      "path": [
+        "Area Chart",
+        "Proportional Area Chart"
+      ],
+      "ancestors": [
+        "Area Chart"
+      ]
+    },
+    "Radar Line Chart": {
+      "path": [
+        "Radar Chart",
+        "Radar Line Chart"
+      ],
+      "ancestors": [
+        "Radar Chart"
+      ]
+    },
+    "Multiple Radar Line Chart": {
+      "path": [
+        "Radar Chart",
+        "Radar Line Chart"
+      ],
+      "ancestors": [
+        "Radar Chart"
+      ]
+    },
+    "Radar Spline Chart": {
+      "path": [
+        "Radar Chart",
+        "Radar Spline Chart"
+      ],
+      "ancestors": [
+        "Radar Chart"
+      ]
+    },
+    "Multiple Radar Spline Chart": {
+      "path": [
+        "Radar Chart",
+        "Radar Spline Chart"
+      ],
+      "ancestors": [
+        "Radar Chart"
+      ]
+    },
+    "Multiple Radar Chart": {
+      "path": [
+        "Radar Chart",
+        "Multiple Radar Chart"
+      ],
+      "ancestors": [
+        "Radar Chart"
+      ]
+    },
+    "Pie Chart": {
+      "path": [
+        "Pie Chart",
+        "Basic Pie Chart"
+      ],
+      "ancestors": [
+        "Pie Chart"
+      ]
+    },
+    "Semicircle Pie Chart": {
+      "path": [
+        "Pie Chart",
+        "Basic Pie Chart"
+      ],
+      "ancestors": [
+        "Pie Chart"
+      ]
+    },
+    "Multiple Pie Chart": {
+      "path": [
+        "Pie Chart",
+        "Basic Pie Chart"
+      ],
+      "ancestors": [
+        "Pie Chart"
+      ]
+    },
+    "Donut Chart": {
+      "path": [
+        "Pie Chart",
+        "Donut Chart"
+      ],
+      "ancestors": [
+        "Pie Chart"
+      ]
+    },
+    "Semicircle Donut Chart": {
+      "path": [
+        "Pie Chart",
+        "Donut Chart"
+      ],
+      "ancestors": [
+        "Pie Chart"
+      ]
+    },
+    "Multiple Donut Chart": {
+      "path": [
+        "Pie Chart",
+        "Donut Chart"
+      ],
+      "ancestors": [
+        "Pie Chart"
+      ]
+    },
+    "Multiple Semi Donut Chart": {
+      "path": [
+        "Pie Chart",
+        "Donut Chart"
+      ],
+      "ancestors": [
+        "Pie Chart"
+      ]
+    },
+    "Scatterplot": {
+      "path": [
+        "Scatterplot",
+        "Basic Scatterplot"
+      ],
+      "ancestors": [
+        "Scatterplot"
+      ]
+    },
+    "Grouped Scatterplot": {
+      "path": [
+        "Scatterplot",
+        "Basic Scatterplot"
+      ],
+      "ancestors": [
+        "Scatterplot"
+      ]
+    },
+    "Bubble Chart": {
+      "path": [
+        "Scatterplot",
+        "Bubble Chart"
+      ],
+      "ancestors": [
+        "Scatterplot"
+      ]
+    },
+    "Multiple Gauge Chart": {
+      "path": [
+        "Gauge Chart",
+        "Multiple Gauge Chart"
+      ],
+      "ancestors": [
+        "Gauge Chart"
+      ]
+    },
+    "Treemap": {
+      "path": [
+        "Treemap",
+        "Basic Treemap"
+      ],
+      "ancestors": [
+        "Treemap"
+      ]
+    },
+    "Voronoi Treemap(Circle)": {
+      "path": [
+        "Treemap",
+        "Voronoi Treemap"
+      ],
+      "ancestors": [
+        "Treemap"
+      ]
+    },
+    "Voronoi Treemap(Rectangle)": {
+      "path": [
+        "Treemap",
+        "Voronoi Treemap"
+      ],
+      "ancestors": [
+        "Treemap"
+      ]
+    },
+    "Alluvial Diagram": {
+      "path": [
+        "Diagram",
+        "Alluvial Diagram"
+      ],
+      "ancestors": [
+        "Diagram"
+      ]
+    },
+    "Pyramid Diagram": {
+      "path": [
+        "Diagram",
+        "Pyramid Diagram"
+      ],
+      "ancestors": [
+        "Diagram"
+      ]
+    },
+    "Histogram": {
+      "path": [
+        "Histogram"
+      ],
+      "ancestors": []
+    },
+    "Range Chart": {
+      "path": [
+        "Range Chart"
+      ],
+      "ancestors": []
+    },
+    "Funnel Chart": {
+      "path": [
+        "Funnel Chart"
+      ],
+      "ancestors": []
+    },
+    "Pyramid Chart": {
+      "path": [
+        "Pyramid Chart"
+      ],
+      "ancestors": []
+    }
+  },
+  "statistics": {
+    "total_roots": 13,
+    "total_types_mapped": 70,
+    "total_types_original": 70,
+    "missing_types": []
+  }
+}

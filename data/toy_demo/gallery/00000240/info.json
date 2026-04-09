@@ -1,0 +1,8 @@
+{
+  "chart_variation": "vertical_range_chart_01",
+  "image_mode": "side",
+  "background_color": "#2b2b3d",
+  "data_source": "Virtual_Reality_Implementation_scenario_5_171226_45432.json",
+  "chart_type": "Range Chart",
+  "layout_template": "TL_TR"
+}

@@ -1,0 +1,8 @@
+{
+  "chart_variation": "histogram_05",
+  "image_mode": "side",
+  "background_color": "#E2F1F6",
+  "data_source": "10354.json",
+  "chart_type": "Histogram",
+  "layout_template": "T_L"
+}

@@ -1,0 +1,8 @@
+{
+  "chart_variation": "treemap_01",
+  "image_mode": "overlay",
+  "background_color": "#E2F1F6",
+  "data_source": "Carbon_Footprint_Comparisons_scenario_2_170712_20270.json",
+  "chart_type": "Treemap",
+  "layout_template": "TL_C"
+}

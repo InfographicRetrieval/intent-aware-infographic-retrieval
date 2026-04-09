@@ -1,0 +1,8 @@
+{
+  "chart_variation": "multiple_radar_chart_01",
+  "image_mode": "side",
+  "background_color": "#F2EDEE",
+  "data_source": "1655.json",
+  "chart_type": "Multiple Radar Chart",
+  "layout_template": "TL_TL"
+}

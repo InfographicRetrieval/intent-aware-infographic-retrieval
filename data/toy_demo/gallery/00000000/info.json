@@ -1,0 +1,8 @@
+{
+  "chart_variation": "horizontal_group_bar_chart_13",
+  "image_mode": "side",
+  "background_color": "#F2EDEE",
+  "data_source": "Food_Consumption_Patterns_scenario_11_150323_28246.json",
+  "chart_type": "Horizontal Group Bar Chart",
+  "layout_template": "T_C"
+}

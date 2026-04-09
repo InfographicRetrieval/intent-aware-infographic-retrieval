@@ -1,0 +1,8 @@
+{
+  "chart_variation": "scatterplot_01",
+  "image_mode": "side",
+  "background_color": "#F2EDEE",
+  "data_source": "Education_Performance_Metrics_scenario_6_144650_45690.json",
+  "chart_type": "Scatterplot",
+  "layout_template": "R_TL"
+}

@@ -1,0 +1,8 @@
+{
+  "chart_variation": "funnel_chart_01",
+  "image_mode": "side",
+  "background_color": "#F2EDEE",
+  "data_source": "Healthcare_Access_Disparities_scenario_3_143146_76744.json",
+  "chart_type": "Funnel Chart",
+  "layout_template": "TL_C"
+}

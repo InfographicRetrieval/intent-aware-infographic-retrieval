@@ -1,0 +1,9 @@
+node_modules/
+build/
+dist/
+.DS_Store
+*.pyc
+__pycache__/
+interface/backend/data/
+interface/backend/user_images/
+interface/.env.development.local

@@ -1,0 +1,8 @@
+{
+  "chart_variation": "pyramid_diagram_01",
+  "image_mode": "side",
+  "background_color": "#F2EDEE",
+  "data_source": "aug_cn_4397.json",
+  "chart_type": "Pyramid Diagram",
+  "layout_template": "B_TR"
+}

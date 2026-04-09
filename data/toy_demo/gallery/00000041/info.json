@@ -1,0 +1,8 @@
+{
+  "chart_variation": "multiple_line_graph_09",
+  "image_mode": "side",
+  "background_color": "#F2EDEE",
+  "data_source": "Gaming_Industry_Evolution_scenario_8_163519_51161.json",
+  "chart_type": "Multiple Line Graph",
+  "layout_template": "TL_L"
+}

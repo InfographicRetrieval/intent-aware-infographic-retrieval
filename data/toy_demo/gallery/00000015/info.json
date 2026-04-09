@@ -1,0 +1,8 @@
+{
+  "chart_variation": "alluvial_diagram_02",
+  "image_mode": "side",
+  "background_color": "#F2EDEE",
+  "data_source": "aug_cnt_4645.json",
+  "chart_type": "Alluvial Diagram",
+  "layout_template": "TL_BL"
+}

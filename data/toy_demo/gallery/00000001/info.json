@@ -1,0 +1,8 @@
+{
+  "chart_variation": "vertical_group_bar_chart_14",
+  "image_mode": "side",
+  "background_color": "#F2EDEE",
+  "data_source": "3098.json",
+  "chart_type": "Vertical Group Bar Chart",
+  "layout_template": "B_TR"
+}

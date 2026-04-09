@@ -1,0 +1,184 @@
+[
+  {
+    "folder_name": "00000000",
+    "root_type": "Bar Chart",
+    "chart_type": "Horizontal Group Bar Chart",
+    "chart_variation": "horizontal_group_bar_chart_13",
+    "layout": "T_C"
+  },
+  {
+    "folder_name": "00000001",
+    "root_type": "Bar Chart",
+    "chart_type": "Vertical Group Bar Chart",
+    "chart_variation": "vertical_group_bar_chart_14",
+    "layout": "B_TR"
+  },
+  {
+    "folder_name": "00000041",
+    "root_type": "Line Chart",
+    "chart_type": "Multiple Line Graph",
+    "chart_variation": "multiple_line_graph_09",
+    "layout": "TL_L"
+  },
+  {
+    "folder_name": "00000044",
+    "root_type": "Line Chart",
+    "chart_type": "Sorted Lines Chart",
+    "chart_variation": "bump_chart_12",
+    "layout": "TL_TR"
+  },
+  {
+    "folder_name": "00000008",
+    "root_type": "Area Chart",
+    "chart_type": "Small Multiple Area Chart",
+    "chart_variation": "small_multiple_area_chart_01",
+    "layout": "TL_TL"
+  },
+  {
+    "folder_name": "00000031",
+    "root_type": "Area Chart",
+    "chart_type": "Spline Area Chart",
+    "chart_variation": "spline_area_chart_02",
+    "layout": "TL_T"
+  },
+  {
+    "folder_name": "00000012",
+    "root_type": "Radar Chart",
+    "chart_type": "Multiple Radar Spline Chart",
+    "chart_variation": "multiple_radar_spline_chart_03",
+    "layout": "TL_TR"
+  },
+  {
+    "folder_name": "00000027",
+    "root_type": "Radar Chart",
+    "chart_type": "Multiple Radar Chart",
+    "chart_variation": "multiple_radar_chart_01",
+    "layout": "TL_TL"
+  },
+  {
+    "folder_name": "00000024",
+    "root_type": "Pie Chart",
+    "chart_type": "Multiple Semi Donut Chart",
+    "chart_variation": "multiple_semi_donut_chart_01",
+    "layout": "BR_L"
+  },
+  {
+    "folder_name": "00000026",
+    "root_type": "Pie Chart",
+    "chart_type": "Multiple Pie Chart",
+    "chart_variation": "multiple_pie_chart_03",
+    "layout": "TL_BR"
+  },
+  {
+    "folder_name": "00000065",
+    "root_type": "Scatterplot",
+    "chart_type": "Grouped Scatterplot",
+    "chart_variation": "grouped_scatterplot_03",
+    "layout": "TL_BR"
+  },
+  {
+    "folder_name": "00000227",
+    "root_type": "Scatterplot",
+    "chart_type": "Scatterplot",
+    "chart_variation": "scatterplot_01",
+    "layout": "R_TL"
+  },
+  {
+    "folder_name": "00000535",
+    "root_type": "Gauge Chart",
+    "chart_type": "Multiple Gauge Chart",
+    "chart_variation": "multiple_gauge_chart_03",
+    "layout": "TL_BL"
+  },
+  {
+    "folder_name": "00000648",
+    "root_type": "Gauge Chart",
+    "chart_type": "Multiple Gauge Chart",
+    "chart_variation": "multiple_gauge_chart_03",
+    "layout": "B_L"
+  },
+  {
+    "folder_name": "00000564",
+    "root_type": "Treemap",
+    "chart_type": "Treemap",
+    "chart_variation": "treemap_01",
+    "layout": "TL_C"
+  },
+  {
+    "folder_name": "00000748",
+    "root_type": "Treemap",
+    "chart_type": "Voronoi Treemap(Circle)",
+    "chart_variation": "voronoi_treemap_circle_02",
+    "layout": "TL_TR"
+  },
+  {
+    "folder_name": "00000015",
+    "root_type": "Diagram",
+    "chart_type": "Alluvial Diagram",
+    "chart_variation": "alluvial_diagram_02",
+    "layout": "TL_BL"
+  },
+  {
+    "folder_name": "00000395",
+    "root_type": "Diagram",
+    "chart_type": "Pyramid Diagram",
+    "chart_variation": "pyramid_diagram_01",
+    "layout": "B_TR"
+  },
+  {
+    "folder_name": "00000010",
+    "root_type": "Histogram",
+    "chart_type": "Histogram",
+    "chart_variation": "histogram_04",
+    "layout": "BL_TR"
+  },
+  {
+    "folder_name": "00000067",
+    "root_type": "Histogram",
+    "chart_type": "Histogram",
+    "chart_variation": "histogram_05",
+    "layout": "T_L"
+  },
+  {
+    "folder_name": "00000170",
+    "root_type": "Range Chart",
+    "chart_type": "Range Chart",
+    "chart_variation": "horizontal_range_bar_chart_01",
+    "layout": "TL_BL"
+  },
+  {
+    "folder_name": "00000240",
+    "root_type": "Range Chart",
+    "chart_type": "Range Chart",
+    "chart_variation": "vertical_range_chart_01",
+    "layout": "TL_TR"
+  },
+  {
+    "folder_name": "00000049",
+    "root_type": "Funnel Chart",
+    "chart_type": "Funnel Chart",
+    "chart_variation": "funnel_chart_01",
+    "layout": "TL_C"
+  },
+  {
+    "folder_name": "00000094",
+    "root_type": "Funnel Chart",
+    "chart_type": "Funnel Chart",
+    "chart_variation": "funnel_chart_01",
+    "layout": "TL_R"
+  },
+  {
+    "folder_name": "00000103",
+    "root_type": "Pyramid Chart",
+    "chart_type": "Pyramid Chart",
+    "chart_variation": "pyramid_chart_01",
+    "layout": "TR_TL"
+  },
+  {
+    "folder_name": "00000696",
+    "root_type": "Pyramid Chart",
+    "chart_type": "Pyramid Chart",
+    "chart_variation": "pyramid_chart_01",
+    "layout": "BL_TL"
+  }
+]

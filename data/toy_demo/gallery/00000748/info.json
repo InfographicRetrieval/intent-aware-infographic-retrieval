@@ -1,0 +1,8 @@
+{
+  "chart_variation": "voronoi_treemap_circle_02",
+  "image_mode": "side",
+  "background_color": "#F2EDEE",
+  "data_source": "Movement_Therapy_Applications_scenario_7_201156_44380.json",
+  "chart_type": "Voronoi Treemap(Circle)",
+  "layout_template": "TL_TR"
+}

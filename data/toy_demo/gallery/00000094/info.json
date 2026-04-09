@@ -1,0 +1,8 @@
+{
+  "chart_variation": "funnel_chart_01",
+  "image_mode": "side",
+  "background_color": "#E2F1F6",
+  "data_source": "Romantic_Gesture_Preferences_scenario_5_205927_92382.json",
+  "chart_type": "Funnel Chart",
+  "layout_template": "TL_R"
+}

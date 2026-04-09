@@ -1,0 +1,28 @@
+You are given a user request and several reference chart images.
+
+Your task:
+Select and rank the reference images that are most useful for helping the user achieve their goal.
+
+Output format (strictly follow):
+<select>[i]</select>
+
+Rules:
+1. Use zero-based indices (0, 1, 2, ...).
+2. List only the images that are useful for the user's goal, in **descending order of relevance**.
+   - The first index should be the most relevant.
+   - The second index should be the next most relevant, and so on.
+3. You may select 1-2 images.
+4. Do not include any explanation, reasoning, or commentary.
+5. Output only the <select> tag with indices.
+
+---
+
+### Example 2
+User request: "How to visualize hierarchical data more clearly?"
+Reference images: 3 charts.
+
+Expected output:
+<select>[1,2]</select>
+
+Meaning:
+- Image 1,2 are most relevant.

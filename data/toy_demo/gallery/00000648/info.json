@@ -1,0 +1,8 @@
+{
+  "chart_variation": "multiple_gauge_chart_03",
+  "image_mode": "side",
+  "background_color": "#F2EDEE",
+  "data_source": "1527.json",
+  "chart_type": "Multiple Gauge Chart",
+  "layout_template": "B_L"
+}

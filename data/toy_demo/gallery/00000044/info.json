@@ -1,0 +1,8 @@
+{
+  "chart_variation": "bump_chart_12",
+  "image_mode": "side",
+  "background_color": "#e1f1fa",
+  "data_source": "Play_Genre_Popularity_scenario_2_201045_77281.json",
+  "chart_type": "Sorted Lines Chart",
+  "layout_template": "TL_TR"
+}

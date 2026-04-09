@@ -1,0 +1,8 @@
+{
+  "chart_variation": "multiple_pie_chart_03",
+  "image_mode": "side",
+  "background_color": "#2e2e2e",
+  "data_source": "20327.json",
+  "chart_type": "Multiple Pie Chart",
+  "layout_template": "TL_BR"
+}

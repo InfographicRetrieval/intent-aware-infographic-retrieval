@@ -1,0 +1,8 @@
+{
+  "chart_variation": "spline_area_chart_02",
+  "image_mode": "side",
+  "background_color": "#E2F1F6",
+  "data_source": "11008.json",
+  "chart_type": "Spline Area Chart",
+  "layout_template": "TL_T"
+}

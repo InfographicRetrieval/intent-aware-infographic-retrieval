@@ -1,0 +1,8 @@
+{
+  "chart_variation": "horizontal_range_bar_chart_01",
+  "image_mode": "side",
+  "background_color": "#1c2541",
+  "data_source": "7286.json",
+  "chart_type": "Range Chart",
+  "layout_template": "TL_BL"
+}

@@ -1,0 +1,25 @@
+# Local environment
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Frontend
+node_modules/
+build/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Runtime/session data
+backend/chat_sessions.json
+backend/chat_sessions.json.backup
+backend/plain_chat_sessions.json
+backend/data/sessions/users/
+backend/data/plainchat/users/
+backend/user_images/
+
+# Local scratch/demo artifacts
+UI_demo/
+src/*.zip

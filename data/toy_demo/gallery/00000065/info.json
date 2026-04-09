@@ -1,0 +1,8 @@
+{
+  "chart_variation": "grouped_scatterplot_03",
+  "image_mode": "side",
+  "background_color": "#F2EDEE",
+  "data_source": "developed_countries_Assault_rate_per_100,000_population_vs_Theft_at_the_national_level,_rate_per_100,000_popu_0.41_2022_chart_with_group.json",
+  "chart_type": "Grouped Scatterplot",
+  "layout_template": "TL_BR"
+}

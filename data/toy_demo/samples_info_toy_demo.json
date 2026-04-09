@@ -1,0 +1,392 @@
+[
+  {
+    "folder_name": "00000000",
+    "info": {
+      "chart_variation": "horizontal_group_bar_chart_13",
+      "image_mode": "side",
+      "background_color": "#F2EDEE",
+      "data_source": "Food_Consumption_Patterns_scenario_11_150323_28246.json",
+      "chart_type": "Horizontal Group Bar Chart",
+      "layout_template": "T_C"
+    },
+    "chart_type": "Horizontal Group Bar Chart",
+    "chart_variation": "horizontal_group_bar_chart_13",
+    "layout": "T_C",
+    "info_json_path": "gallery/00000000/info.json"
+  },
+  {
+    "folder_name": "00000001",
+    "info": {
+      "chart_variation": "vertical_group_bar_chart_14",
+      "image_mode": "side",
+      "background_color": "#F2EDEE",
+      "data_source": "3098.json",
+      "chart_type": "Vertical Group Bar Chart",
+      "layout_template": "B_TR"
+    },
+    "chart_type": "Vertical Group Bar Chart",
+    "chart_variation": "vertical_group_bar_chart_14",
+    "layout": "B_TR",
+    "info_json_path": "gallery/00000001/info.json"
+  },
+  {
+    "folder_name": "00000041",
+    "info": {
+      "chart_variation": "multiple_line_graph_09",
+      "image_mode": "side",
+      "background_color": "#F2EDEE",
+      "data_source": "Gaming_Industry_Evolution_scenario_8_163519_51161.json",
+      "chart_type": "Multiple Line Graph",
+      "layout_template": "TL_L"
+    },
+    "chart_type": "Multiple Line Graph",
+    "chart_variation": "multiple_line_graph_09",
+    "layout": "TL_L",
+    "info_json_path": "gallery/00000041/info.json"
+  },
+  {
+    "folder_name": "00000044",
+    "info": {
+      "chart_variation": "bump_chart_12",
+      "image_mode": "side",
+      "background_color": "#e1f1fa",
+      "data_source": "Play_Genre_Popularity_scenario_2_201045_77281.json",
+      "chart_type": "Sorted Lines Chart",
+      "layout_template": "TL_TR"
+    },
+    "chart_type": "Sorted Lines Chart",
+    "chart_variation": "bump_chart_12",
+    "layout": "TL_TR",
+    "info_json_path": "gallery/00000044/info.json"
+  },
+  {
+    "folder_name": "00000008",
+    "info": {
+      "chart_variation": "small_multiple_area_chart_01",
+      "image_mode": "side",
+      "background_color": "#2b2b3d",
+      "data_source": "14259.json",
+      "chart_type": "Small Multiple Area Chart",
+      "layout_template": "TL_TL"
+    },
+    "chart_type": "Small Multiple Area Chart",
+    "chart_variation": "small_multiple_area_chart_01",
+    "layout": "TL_TL",
+    "info_json_path": "gallery/00000008/info.json"
+  },
+  {
+    "folder_name": "00000031",
+    "info": {
+      "chart_variation": "spline_area_chart_02",
+      "image_mode": "side",
+      "background_color": "#E2F1F6",
+      "data_source": "11008.json",
+      "chart_type": "Spline Area Chart",
+      "layout_template": "TL_T"
+    },
+    "chart_type": "Spline Area Chart",
+    "chart_variation": "spline_area_chart_02",
+    "layout": "TL_T",
+    "info_json_path": "gallery/00000031/info.json"
+  },
+  {
+    "folder_name": "00000012",
+    "info": {
+      "chart_variation": "multiple_radar_spline_chart_03",
+      "image_mode": "side",
+      "background_color": "#F2EDEE",
+      "data_source": "Sound_Environment_Analysis_scenario_15_195422_87939.json",
+      "chart_type": "Multiple Radar Spline Chart",
+      "layout_template": "TL_TR"
+    },
+    "chart_type": "Multiple Radar Spline Chart",
+    "chart_variation": "multiple_radar_spline_chart_03",
+    "layout": "TL_TR",
+    "info_json_path": "gallery/00000012/info.json"
+  },
+  {
+    "folder_name": "00000027",
+    "info": {
+      "chart_variation": "multiple_radar_chart_01",
+      "image_mode": "side",
+      "background_color": "#F2EDEE",
+      "data_source": "1655.json",
+      "chart_type": "Multiple Radar Chart",
+      "layout_template": "TL_TL"
+    },
+    "chart_type": "Multiple Radar Chart",
+    "chart_variation": "multiple_radar_chart_01",
+    "layout": "TL_TL",
+    "info_json_path": "gallery/00000027/info.json"
+  },
+  {
+    "folder_name": "00000024",
+    "info": {
+      "chart_variation": "multiple_semi_donut_chart_01",
+      "image_mode": "side",
+      "background_color": "#F2EDEE",
+      "data_source": "9388.json",
+      "chart_type": "Multiple Semi Donut Chart",
+      "layout_template": "BR_L"
+    },
+    "chart_type": "Multiple Semi Donut Chart",
+    "chart_variation": "multiple_semi_donut_chart_01",
+    "layout": "BR_L",
+    "info_json_path": "gallery/00000024/info.json"
+  },
+  {
+    "folder_name": "00000026",
+    "info": {
+      "chart_variation": "multiple_pie_chart_03",
+      "image_mode": "side",
+      "background_color": "#2e2e2e",
+      "data_source": "20327.json",
+      "chart_type": "Multiple Pie Chart",
+      "layout_template": "TL_BR"
+    },
+    "chart_type": "Multiple Pie Chart",
+    "chart_variation": "multiple_pie_chart_03",
+    "layout": "TL_BR",
+    "info_json_path": "gallery/00000026/info.json"
+  },
+  {
+    "folder_name": "00000065",
+    "info": {
+      "chart_variation": "grouped_scatterplot_03",
+      "image_mode": "side",
+      "background_color": "#F2EDEE",
+      "data_source": "developed_countries_Assault_rate_per_100,000_population_vs_Theft_at_the_national_level,_rate_per_100,000_popu_0.41_2022_chart_with_group.json",
+      "chart_type": "Grouped Scatterplot",
+      "layout_template": "TL_BR"
+    },
+    "chart_type": "Grouped Scatterplot",
+    "chart_variation": "grouped_scatterplot_03",
+    "layout": "TL_BR",
+    "info_json_path": "gallery/00000065/info.json"
+  },
+  {
+    "folder_name": "00000227",
+    "info": {
+      "chart_variation": "scatterplot_01",
+      "image_mode": "side",
+      "background_color": "#F2EDEE",
+      "data_source": "Education_Performance_Metrics_scenario_6_144650_45690.json",
+      "chart_type": "Scatterplot",
+      "layout_template": "R_TL"
+    },
+    "chart_type": "Scatterplot",
+    "chart_variation": "scatterplot_01",
+    "layout": "R_TL",
+    "info_json_path": "gallery/00000227/info.json"
+  },
+  {
+    "folder_name": "00000535",
+    "info": {
+      "chart_variation": "multiple_gauge_chart_03",
+      "image_mode": "side",
+      "background_color": "#F2EDEE",
+      "data_source": "Home_Appliance_Efficiency_scenario_2_171920_83760.json",
+      "chart_type": "Multiple Gauge Chart",
+      "layout_template": "TL_BL"
+    },
+    "chart_type": "Multiple Gauge Chart",
+    "chart_variation": "multiple_gauge_chart_03",
+    "layout": "TL_BL",
+    "info_json_path": "gallery/00000535/info.json"
+  },
+  {
+    "folder_name": "00000648",
+    "info": {
+      "chart_variation": "multiple_gauge_chart_03",
+      "image_mode": "side",
+      "background_color": "#F2EDEE",
+      "data_source": "1527.json",
+      "chart_type": "Multiple Gauge Chart",
+      "layout_template": "B_L"
+    },
+    "chart_type": "Multiple Gauge Chart",
+    "chart_variation": "multiple_gauge_chart_03",
+    "layout": "B_L",
+    "info_json_path": "gallery/00000648/info.json"
+  },
+  {
+    "folder_name": "00000564",
+    "info": {
+      "chart_variation": "treemap_01",
+      "image_mode": "overlay",
+      "background_color": "#E2F1F6",
+      "data_source": "Carbon_Footprint_Comparisons_scenario_2_170712_20270.json",
+      "chart_type": "Treemap",
+      "layout_template": "TL_C"
+    },
+    "chart_type": "Treemap",
+    "chart_variation": "treemap_01",
+    "layout": "TL_C",
+    "info_json_path": "gallery/00000564/info.json"
+  },
+  {
+    "folder_name": "00000748",
+    "info": {
+      "chart_variation": "voronoi_treemap_circle_02",
+      "image_mode": "side",
+      "background_color": "#F2EDEE",
+      "data_source": "Movement_Therapy_Applications_scenario_7_201156_44380.json",
+      "chart_type": "Voronoi Treemap(Circle)",
+      "layout_template": "TL_TR"
+    },
+    "chart_type": "Voronoi Treemap(Circle)",
+    "chart_variation": "voronoi_treemap_circle_02",
+    "layout": "TL_TR",
+    "info_json_path": "gallery/00000748/info.json"
+  },
+  {
+    "folder_name": "00000015",
+    "info": {
+      "chart_variation": "alluvial_diagram_02",
+      "image_mode": "side",
+      "background_color": "#F2EDEE",
+      "data_source": "aug_cnt_4645.json",
+      "chart_type": "Alluvial Diagram",
+      "layout_template": "TL_BL"
+    },
+    "chart_type": "Alluvial Diagram",
+    "chart_variation": "alluvial_diagram_02",
+    "layout": "TL_BL",
+    "info_json_path": "gallery/00000015/info.json"
+  },
+  {
+    "folder_name": "00000395",
+    "info": {
+      "chart_variation": "pyramid_diagram_01",
+      "image_mode": "side",
+      "background_color": "#F2EDEE",
+      "data_source": "aug_cn_4397.json",
+      "chart_type": "Pyramid Diagram",
+      "layout_template": "B_TR"
+    },
+    "chart_type": "Pyramid Diagram",
+    "chart_variation": "pyramid_diagram_01",
+    "layout": "B_TR",
+    "info_json_path": "gallery/00000395/info.json"
+  },
+  {
+    "folder_name": "00000010",
+    "info": {
+      "chart_variation": "histogram_04",
+      "image_mode": "side",
+      "background_color": "#254362",
+      "data_source": "14706.json",
+      "chart_type": "Histogram",
+      "layout_template": "BL_TR"
+    },
+    "chart_type": "Histogram",
+    "chart_variation": "histogram_04",
+    "layout": "BL_TR",
+    "info_json_path": "gallery/00000010/info.json"
+  },
+  {
+    "folder_name": "00000067",
+    "info": {
+      "chart_variation": "histogram_05",
+      "image_mode": "side",
+      "background_color": "#E2F1F6",
+      "data_source": "10354.json",
+      "chart_type": "Histogram",
+      "layout_template": "T_L"
+    },
+    "chart_type": "Histogram",
+    "chart_variation": "histogram_05",
+    "layout": "T_L",
+    "info_json_path": "gallery/00000067/info.json"
+  },
+  {
+    "folder_name": "00000170",
+    "info": {
+      "chart_variation": "horizontal_range_bar_chart_01",
+      "image_mode": "side",
+      "background_color": "#1c2541",
+      "data_source": "7286.json",
+      "chart_type": "Range Chart",
+      "layout_template": "TL_BL"
+    },
+    "chart_type": "Range Chart",
+    "chart_variation": "horizontal_range_bar_chart_01",
+    "layout": "TL_BL",
+    "info_json_path": "gallery/00000170/info.json"
+  },
+  {
+    "folder_name": "00000240",
+    "info": {
+      "chart_variation": "vertical_range_chart_01",
+      "image_mode": "side",
+      "background_color": "#2b2b3d",
+      "data_source": "Virtual_Reality_Implementation_scenario_5_171226_45432.json",
+      "chart_type": "Range Chart",
+      "layout_template": "TL_TR"
+    },
+    "chart_type": "Range Chart",
+    "chart_variation": "vertical_range_chart_01",
+    "layout": "TL_TR",
+    "info_json_path": "gallery/00000240/info.json"
+  },
+  {
+    "folder_name": "00000049",
+    "info": {
+      "chart_variation": "funnel_chart_01",
+      "image_mode": "side",
+      "background_color": "#F2EDEE",
+      "data_source": "Healthcare_Access_Disparities_scenario_3_143146_76744.json",
+      "chart_type": "Funnel Chart",
+      "layout_template": "TL_C"
+    },
+    "chart_type": "Funnel Chart",
+    "chart_variation": "funnel_chart_01",
+    "layout": "TL_C",
+    "info_json_path": "gallery/00000049/info.json"
+  },
+  {
+    "folder_name": "00000094",
+    "info": {
+      "chart_variation": "funnel_chart_01",
+      "image_mode": "side",
+      "background_color": "#E2F1F6",
+      "data_source": "Romantic_Gesture_Preferences_scenario_5_205927_92382.json",
+      "chart_type": "Funnel Chart",
+      "layout_template": "TL_R"
+    },
+    "chart_type": "Funnel Chart",
+    "chart_variation": "funnel_chart_01",
+    "layout": "TL_R",
+    "info_json_path": "gallery/00000094/info.json"
+  },
+  {
+    "folder_name": "00000103",
+    "info": {
+      "chart_variation": "pyramid_chart_01",
+      "image_mode": "side",
+      "background_color": "#F2EDEE",
+      "data_source": "aug_tn_5002.json",
+      "chart_type": "Pyramid Chart",
+      "layout_template": "TR_TL"
+    },
+    "chart_type": "Pyramid Chart",
+    "chart_variation": "pyramid_chart_01",
+    "layout": "TR_TL",
+    "info_json_path": "gallery/00000103/info.json"
+  },
+  {
+    "folder_name": "00000696",
+    "info": {
+      "chart_variation": "pyramid_chart_01",
+      "image_mode": "side",
+      "background_color": "#F2EDEE",
+      "data_source": "18562.json",
+      "chart_type": "Pyramid Chart",
+      "layout_template": "BL_TL"
+    },
+    "chart_type": "Pyramid Chart",
+    "chart_variation": "pyramid_chart_01",
+    "layout": "BL_TL",
+    "info_json_path": "gallery/00000696/info.json"
+  }
+]
