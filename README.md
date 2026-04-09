@@ -1,6 +1,6 @@
 # Code for "Show Me the Infographic I Imagine: Intent-Aware Infographic Retrieval for Authoring Support"
 
-This repository contains a cleaned code release of the interactive interface used in the paper.
+This repository contains code of the interactive interface used in the paper.
 
 ## Included
 
