@@ -1,6 +1,7 @@
 # Toy Demo Data
 
-This directory contains a small toy demo dataset for the interface.
+This directory contains the self-contained verification gallery used by the
+default retrieval mode.
 
 ## Included
 
@@ -12,9 +13,10 @@ This directory contains a small toy demo dataset for the interface.
 
 The toy subset covers all 13 root chart categories in the interface, with two examples per root category.
 
-## Quick Use
+## Default Use
 
-From the package root, point the backend to the toy demo with:
+`interface/backend/start_server.sh` selects these paths automatically when
+`RETRIEVAL_MODE=toy`. The equivalent explicit configuration is:
 
 ```bash
 export CHARTRETRIEVAL_DATA_ROOT=./data/toy_demo/gallery
@@ -23,16 +25,17 @@ export CHART_TYPES_HIERARCHY_FILE=./data/toy_demo/chart_types_hierarchy.json
 export RETRIEVAL_SPLIT_FILE=./data/toy_demo/toy_split.json
 ```
 
-If you also have the retrieval code and weights available, you can keep the rest of the startup flow unchanged.
+## Verification Coverage
 
-## What The Toy Demo Is For
+- structured five-facet query submission
+- deterministic retrieval and result ranking
+- chart-type metadata and hierarchy loading
+- gallery image and SVG serving
+- exemplar selection and frontend/backend data flow
 
-- sanity-checking the interface data flow
-- understanding the expected gallery layout
-- testing metadata and split-file wiring
-- providing a concrete example for adapting external data
-
-This toy demo is intentionally small. It is not meant to reproduce the full retrieval results reported in the paper.
+The learned paper retriever uses the same file contracts at corpus scale. The
+bundled mode keeps verification fast and deterministic while the paper mode
+substitutes learned embeddings and the released checkpoint.
 
 ## Expected Gallery Layout
 
@@ -64,13 +67,13 @@ The split file is a simple JSON object:
 }
 ```
 
-## Adapting Your Own ChartGalaxy-Derived Data
+## Using A Full Gallery
 
-If you want to use your own data derived from ChartGalaxy, the simplest path is to mirror the toy demo format:
+Mirror the bundled format when configuring the paper retriever:
 
 1. Export each chart example into a folder containing `chart.png`, optionally `chart.svg`, and `info.json`.
 2. Build a metadata JSON list with one item per folder.
 3. Build a split JSON file listing the sample IDs you want the retriever to index.
 4. Point the backend to those files with `CHARTRETRIEVAL_DATA_ROOT`, `CHART_METADATA_FILE`, and `RETRIEVAL_SPLIT_FILE`.
 
-The toy demo is intended to serve as the reference format for that conversion.
+The bundled gallery is the reference implementation of this contract.

@@ -1,138 +1,136 @@
 # Code for "Show Me the Infographic I Imagine: Intent-Aware Infographic Retrieval for Authoring Support"
 
-This repository contains code of the interactive interface used in the paper.
+This repository contains the supplemental implementation for the paper
+"Show Me the Infographic I Imagine: Intent-Aware Infographic Retrieval for
+Authoring Support." It includes the interactive authoring interface, backend
+services, prompt templates, SVG-processing utilities, and a self-contained
+26-item gallery for verifying the retrieval workflow.
 
-## Included
+## Reproduction Modes
 
-- `interface/src/`: React frontend source
+The release supports two modes through the same API and interface.
+
+- `toy` is the default. It uses the bundled gallery and a deterministic
+  metadata retriever, so the retrieval, filtering, selection, image serving,
+  and interface data flow can be reproduced without downloading model weights.
+- `paper` loads the facet-aware BGE-VL retriever used by the full system. Use
+  this mode with the paper checkpoint, corpus metadata, split, hierarchy, and
+  gallery paths described below.
+
+The toy retriever preserves the structured five-facet query and result API, but
+it is a lightweight verification backend rather than the learned model reported
+in the quantitative tables.
+
+## Repository Contents
+
+- `interface/src/`: React frontend
 - `interface/public/`: frontend static assets
-- `interface/backend/`: FastAPI backend, retrieval glue code, prompt files, and session helpers
-- `interface/package.json` and `interface/package-lock.json`: frontend dependencies
+- `interface/backend/`: FastAPI backend, retrieval adapters, prompt files,
+  SVG processing, and session management
+- `data/toy_demo/`: 26 examples spanning all 13 coarse chart types
+- `interface/package-lock.json`: pinned frontend dependency graph
 - `interface/backend/requirements.txt`: backend dependencies
 
-## Intentionally Excluded
+## Requirements
 
-- `node_modules/`
-- `build/`
-- cached Python bytecode
-- local session data under `backend/data/`
-- uploaded user files under `backend/user_images/`
-- local test files and lock files
-- local-only `.env.development.local`
+- Python 3.10 or later
+- Node.js 18 or later
+- An OpenAI-compatible API key for conversational generation
+- A CUDA-capable GPU for practical use of the paper retriever
 
-## Before You Start
+Retrieval-only endpoints and the baseline page work in toy mode without an API
+key. The chat-based authoring workflow requires one of the model configurations
+listed under `Model Configuration`.
 
-This package contains the interface code, but the retrieval backend still expects a few retrieval assets in addition to the frontend and backend source:
+## Quick Reproduction
 
-- retrieval checkpoint
-- retrieval split file
-- chart type hierarchy
-- metadata file
-- gallery image root
-
-The backend supports environment-variable overrides for those paths, so readers do not have to match the original author's machine exactly.
-
-For a lightweight example dataset and the expected gallery format, see `data/README.md`.
-
-## Required Environment Variables
-
-At least one OpenAI API configuration is needed for chat generation:
-
-- `OPENAI_API_KEY`
-- optional: `OPENAI_BASE_URL` (defaults to `https://api.openai.com/v1`)
-
-If you use the Qwen route, set:
-
-- `DASHSCOPE_API_KEY`
-- optional: `DASHSCOPE_BASE_URL` (defaults to `https://dashscope.aliyuncs.com/compatible-mode/v1`)
-
-Backward compatibility:
-
-- the backend still accepts `CLOSEAI_API_KEY` / `CLOSEAI_BASE_URL`
-- it also still accepts `SILICONFLOW_API_KEY` / `SILICONFLOW_BASE_URL`
-
-Useful path overrides:
-
-- `CHARTRETRIEVAL_DATA_ROOT`
-- `RETRIEVAL_CKPT`
-- `RETRIEVAL_SPLIT_FILE`
-- `RETRIEVAL_EMBEDDINGS_CACHE_DIR`
-- `CHART_TYPES_HIERARCHY_FILE`
-- `CHART_METADATA_FILE`
-- optional: `CUDA_VISIBLE_DEVICES`
-
-## Quick Start
-
-### 1. Install frontend dependencies
-
-```bash
-cd interface
-npm install
-```
-
-### 2. Install backend dependencies
+### 1. Install the backend
 
 ```bash
 cd interface/backend
-pip install -r requirements.txt
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
 ```
 
-### 3. Export API credentials
+### 2. Start the bundled retrieval backend
 
-Example:
+```bash
+bash start_server.sh
+```
+
+The script defaults to `RETRIEVAL_MODE=toy` and resolves all data paths relative
+to this repository. Verify it from another terminal:
+
+```bash
+curl http://localhost:8005/api/health
+curl -X POST http://localhost:8005/api/baseline/search \
+  -F 'query=horizontal bar chart about food consumption' \
+  -F 'top_k=5'
+```
+
+### 3. Start the interface
+
+```bash
+cd interface
+npm ci
+npm start
+```
+
+Open `http://localhost:3000`. The frontend proxies API requests to
+`http://localhost:8005`.
+
+## Model Configuration
+
+For chat generation, configure either an OpenAI endpoint:
 
 ```bash
 export OPENAI_API_KEY=your_key_here
 export OPENAI_BASE_URL=https://api.openai.com/v1
 ```
 
-If you want to use Qwen via DashScope, also export:
+or the Qwen-compatible DashScope endpoint:
 
 ```bash
-export DASHSCOPE_API_KEY=your_dashscope_key_here
+export DASHSCOPE_API_KEY=your_key_here
 export DASHSCOPE_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode/v1
 ```
 
-To try the included toy demo, also export:
+The compatibility aliases `CLOSEAI_API_KEY`, `CLOSEAI_BASE_URL`,
+`SILICONFLOW_API_KEY`, and `SILICONFLOW_BASE_URL` remain supported.
 
-```bash
-export CHARTRETRIEVAL_DATA_ROOT=./data/toy_demo/gallery
-export CHART_METADATA_FILE=./data/toy_demo/samples_info_toy_demo.json
-export CHART_TYPES_HIERARCHY_FILE=./data/toy_demo/chart_types_hierarchy.json
-export RETRIEVAL_SPLIT_FILE=./data/toy_demo/toy_split.json
-```
+## Paper Retriever
 
-### 4. Start backend
+Set `RETRIEVAL_MODE=paper` and point the backend to the paper-scale artifacts:
 
 ```bash
 cd interface/backend
+python -m pip install -r requirements-paper.txt
+export RETRIEVAL_MODE=paper
+export RETRIEVAL_CKPT=/path/to/best_model.pt
+export CHARTRETRIEVAL_DATA_ROOT=/path/to/gallery
+export CHART_METADATA_FILE=/path/to/samples_info.json
+export CHART_TYPES_HIERARCHY_FILE=/path/to/chart_types_hierarchy.json
+export RETRIEVAL_SPLIT_FILE=/path/to/evaluation_split.json
+export RETRIEVAL_EMBEDDINGS_CACHE_DIR=/path/to/embeddings_cache
 bash start_server.sh
 ```
 
-Backend starts on `http://localhost:8005`.
+The gallery layout and metadata schema are documented in
+[`data/README.md`](data/README.md). The first run computes and caches gallery
+embeddings; subsequent runs reuse that cache.
 
-### 5. Start frontend
+## Interface Routes
 
-In a new terminal:
+- `#/`: intent-aware retrieval and authoring workflow
+- `#/plain-chat`: plain-chat comparison condition
+- `#/baseline`: direct text-retrieval view
 
-```bash
-cd interface
-npm start
-```
+## Generated Data
 
-The frontend proxy is configured for `http://localhost:8005`.
+- Main-chat sessions: `interface/backend/data/sessions/users/`
+- Plain-chat sessions: `interface/backend/data/plainchat/users/`
+- Uploaded images: `interface/backend/user_images/`
+- Default local caches: `.cache/`
 
-## Available Pages
-
-- `#/` main retrieval workflow
-- `#/plain-chat` plain chat page
-- `#/baseline` baseline retrieval page
-
-## Notes
-
-- Main-chat sessions are written to `interface/backend/data/sessions/users/`
-- Plain-chat sessions are written to `interface/backend/data/plainchat/users/`
-- Uploaded user images are written to `interface/backend/user_images/`
-- The backend startup script checks the main retrieval assets before launching
-- This package removes hard-coded API keys and uses environment variables instead
-- For broader portability, the default API configuration targets official OpenAI and official Qwen DashScope endpoints
+These paths are ignored by Git and can be removed between runs.

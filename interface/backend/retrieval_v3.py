@@ -10,7 +10,7 @@ from tqdm import tqdm
 from PIL import Image
 
 # ================= 配置路径 =================
-REPO_ROOT = Path(__file__).resolve().parents[3]
+REPO_ROOT = Path(__file__).resolve().parents[2]
 WORKSPACE_ROOT = REPO_ROOT.parent
 DATA_ROOT = os.environ.get("CHARTRETRIEVAL_DATA_ROOT", "/mnt/share/public/converted/converted")
 DEVICE = os.environ.get("CHARTRETRIEVAL_DEVICE", "cuda" if torch.cuda.is_available() else "cpu")

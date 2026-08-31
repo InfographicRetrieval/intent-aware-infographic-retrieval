@@ -214,7 +214,7 @@ class MLLM:
             base64编码的字符串，如果失败返回None
         """
         # 数据根目录（用于解析相对路径）
-        DATA_ROOT = "/mnt/share/public/converted/converted"
+        DATA_ROOT = os.environ.get("CHARTRETRIEVAL_DATA_ROOT", "")
         
         # 尝试直接使用路径
         full_path = input_image_path
@@ -473,7 +473,7 @@ class MLLM:
                         svg_path = image.replace(".png", ".svg")
                         
                         # 处理相对路径：与 convert_image_to_webp_base64 使用相同的逻辑
-                        DATA_ROOT = "/mnt/share/public/converted/converted"
+                        DATA_ROOT = os.environ.get("CHARTRETRIEVAL_DATA_ROOT", "")
                         if not os.path.isabs(svg_path) and not os.path.exists(svg_path):
                             full_svg_path = os.path.join(DATA_ROOT, svg_path)
                         else:

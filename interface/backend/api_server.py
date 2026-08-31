@@ -19,19 +19,24 @@ import time
 BACKEND_DIR = Path(__file__).resolve().parent
 INTERFACE_DIR = BACKEND_DIR.parent
 RELEASE_DIR = INTERFACE_DIR.parent
-REPO_ROOT = RELEASE_DIR.parent
+REPO_ROOT = RELEASE_DIR
 WORKSPACE_ROOT = REPO_ROOT.parent
+TOY_DATA_DIR = REPO_ROOT / "data" / "toy_demo"
+RETRIEVAL_MODE = os.environ.get("RETRIEVAL_MODE", "toy").strip().lower()
 HIERARCHY_FILE = Path(
     os.environ.get(
         "CHART_TYPES_HIERARCHY_FILE",
-        str(REPO_ROOT / "data_processing" / "chart_types_hierarchy.json"),
+        str(TOY_DATA_DIR / "chart_types_hierarchy.json"),
     )
 )
-os.environ.setdefault("HF_HOME", "/mnt/share/xujing/hf")
+os.environ.setdefault("HF_HOME", str(REPO_ROOT / ".cache" / "huggingface"))
 # 添加项目路径
 sys.path.append(str(BACKEND_DIR))
 sys.path.append(str(REPO_ROOT / "retrieval_training"))
-from retrieval_v3 import RetrievalV3
+if RETRIEVAL_MODE == "paper":
+    from retrieval_v3 import RetrievalV3
+else:
+    from retrieval_toy import ToyRetriever
 
 # 导入MLLM类
 from mllm import MLLM
@@ -68,7 +73,10 @@ app_config = {
         "CHART_FEATURE_BASE_DIR",
         str(WORKSPACE_ROOT / "data" / "bge_caption_tuned"),
     ),
-    'data_base_dir': os.environ.get('CHARTRETRIEVAL_DATA_ROOT', '/mnt/share/public/converted/converted'),
+    'data_base_dir': os.environ.get(
+        'CHARTRETRIEVAL_DATA_ROOT',
+        str(TOY_DATA_DIR / 'gallery'),
+    ),
     'user_images_dir': str(INTERFACE_DIR / "backend/user_images"),
     'sessions_file': str(INTERFACE_DIR / "backend/chat_sessions.json")
 }
@@ -82,7 +90,12 @@ DEFAULT_BASE_MODEL = "gpt-5.4"
 # ===========================
 # 初始化组件
 # ===========================
-retriever = RetrievalV3()
+if RETRIEVAL_MODE == "paper":
+    retriever = RetrievalV3()
+elif RETRIEVAL_MODE == "toy":
+    retriever = ToyRetriever(TOY_DATA_DIR)
+else:
+    raise RuntimeError("RETRIEVAL_MODE must be either 'toy' or 'paper'")
 
 # 加载层次结构
 chart_type_hierarchy = None
@@ -637,7 +650,8 @@ def refine_retrieval_logic(
         image_gallery = [{
             'chart_path': result['chart_path'],
             'chart_type': result.get('chart_type', 'unknown'),
-            'chart_type_parent': get_parent_chart_type(result.get('chart_type', 'unknown'))
+            'chart_type_parent': result.get('chart_type_parent')
+            or get_parent_chart_type(result.get('chart_type', 'unknown'))
         } for result in results]
 
         print("Returning refined retrieval results for user selection")
@@ -685,7 +699,8 @@ def reretrieve_with_query_logic(
     image_gallery = [{
         'chart_path': result['chart_path'],
         'chart_type': result.get('chart_type', 'unknown'),
-        'chart_type_parent': get_parent_chart_type(result.get('chart_type', 'unknown'))
+        'chart_type_parent': result.get('chart_type_parent')
+        or get_parent_chart_type(result.get('chart_type', 'unknown'))
     } for result in results]
 
     return {
@@ -809,7 +824,8 @@ def chat_logic(username: str, user_text: str, user_image_path: Optional[str] = N
         image_gallery = [{
             'chart_path': result['chart_path'],
             'chart_type': result.get('chart_type', 'unknown'),
-            'chart_type_parent': get_parent_chart_type(result.get('chart_type', 'unknown'))
+            'chart_type_parent': result.get('chart_type_parent')
+            or get_parent_chart_type(result.get('chart_type', 'unknown'))
         } for result in results]
 
         return {
@@ -1300,7 +1316,11 @@ async def clear_chat_history_endpoint(username: str, session_id: str):
 @app.get("/api/health")
 async def health_check():
     """健康检查端点"""
-    return {"status": "healthy", "message": "MLLM API is running"}
+    return {
+        "status": "healthy",
+        "message": "MLLM API is running",
+        "retrieval_mode": RETRIEVAL_MODE,
+    }
 
 # ===========================
 # 简易 Baseline 检索端点
@@ -1315,9 +1335,7 @@ async def baseline_search_endpoint(
     直接使用文本查询，返回最相似的图片列表
     """
     try:
-        from retrieval_baseline import baseline_search
-        
-        results = baseline_search(query, top_k=top_k)
+        results = retriever.search(query, top_k=top_k)["results"]
         
         return {
             "query": query,
